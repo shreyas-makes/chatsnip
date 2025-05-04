@@ -1,18 +1,3 @@
----
-title: "ChatSnip"
-source: "https://github.com/shreyas/chatsnip"
-author: "Shreyas"
-published: false
-created: 2023-01-01
-description: "A browser extension that lets you export AI chat conversations as beautifully styled HTML snippets."
-tags:
-  - "browser-extension"
-  - "ai"
-  - "chat"
-  - "export"
-  - "html"
----
-
 # ChatSnip
 
 A browser extension that lets you export AI chat conversations as beautifully styled HTML snippets.
