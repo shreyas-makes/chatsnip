@@ -1,0 +1,16 @@
+{
+  "name": "chat-snip",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "preview": "plasmo preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "plasmo": "^0.90.3"
+  }
+}
