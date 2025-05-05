@@ -7,10 +7,15 @@
     "preview": "plasmo preview"
   },
   "dependencies": {
+    "copy-to-clipboard": "^3.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "plasmo": "^0.90.3"
+    "@types/node": "^22.15.3",
+    "autoprefixer": "^10.4.21",
+    "plasmo": "^0.90.3",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.5"
   }
 }
