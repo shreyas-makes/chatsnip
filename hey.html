@@ -1,4 +1,54 @@
-| You | ChatGPT-4o |
-| --- | --- |
-| answer in one sentence | |
-| | Sure—what’s your question? You said: answer in two sentences ChatGPT Got it. What would you like me to respond to? |
+<div class="chat-container">
+  <div class="chat-row user">
+    <div class="chat-name">You</div>
+    <div class="chat-bubble user">answer in one sentence</div>
+  </div>
+  <div class="chat-row">
+    <div class="chat-name">ChatGPT-4o</div>
+    <div class="chat-bubble agent">Sure—what’s your question?</div>
+  </div>
+  <div class="chat-row user">
+    <div class="chat-name">You</div>
+    <div class="chat-bubble user">answer in two sentences</div>
+  </div>
+  <div class="chat-row">
+    <div class="chat-name">ChatGPT-4o</div>
+    <div class="chat-bubble agent">Got it. What would you like me to respond to?</div>
+  </div>
+</div>
+<style>
+.chat-container {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.chat-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+.chat-row.user {
+  align-items: flex-end;
+}
+.chat-name {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+.chat-bubble {
+  padding: 12px 16px;
+  border-radius: 18px;
+  max-width: 80%;
+  background-color: #f0f0f0;
+}
+.chat-bubble.user {
+  background-color: #1e88e5;
+  color: white;
+}
+.chat-bubble.agent {
+  background-color: #f0f0f0;
+  color: #333;
+}
+</style>

@@ -4,17 +4,35 @@
   "version": "1.0.0",
   "description": "Export AI chat conversations as styled HTML snippets",
   "action": {
-    "default_popup": "popup.html",
     "default_title": "ChatSnip"
   },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://bard.google.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
   "permissions": [
     "activeTab", 
+    "tabs",
     "clipboardWrite",
     "clipboardRead",
     "scripting"
   ],
   "host_permissions": [
     "https://*.openai.com/*",
+    "https://*.chatgpt.com/*",
     "https://*.anthropic.com/*",
     "https://*.google.com/*"
   ],
